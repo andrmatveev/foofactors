@@ -27,7 +27,7 @@ You can install foofactors like so:
 ``` r
 devtools::install_github("jennybc/foofactors")
 ```
-  
+
 ## Quick demo
 
 Binding two factors via `fbind()`:
@@ -53,7 +53,7 @@ fbind(a, b)
 Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.
 
 ```{r}
-set.seed(1234)
+set.seed(1000)
 x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
 table(x)
 ```

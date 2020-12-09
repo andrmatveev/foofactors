@@ -50,12 +50,12 @@ base `table()` function returns an object of class `table`, which can be
 inconvenient for downstream work.
 
 ``` r
-set.seed(1234)
+set.seed(1000)
 x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
 table(x)
 #> x
 #>  a  b  c  d  e 
-#> 19 19 21 22 19
+#> 23 19 25 15 18
 ```
 
 The `fcount()` function returns a frequency table as a tibble with a
@@ -66,9 +66,9 @@ fcount(x)
 #> # A tibble: 5 x 2
 #>   f         n
 #>   <fct> <int>
-#> 1 d        22
-#> 2 c        21
-#> 3 a        19
-#> 4 b        19
-#> 5 e        19
+#> 1 c        25
+#> 2 a        23
+#> 3 b        19
+#> 4 e        18
+#> 5 d        15
 ```
